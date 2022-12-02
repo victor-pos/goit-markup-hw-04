@@ -82,6 +82,10 @@ address {
     letter-spacing: 0.02em;
     color: var(--third-color);
 }
+.contacts.icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
 .links .item:not(:last-child),
 .contact-links .item:not(:last-child) {
     margin-right: 50px;
