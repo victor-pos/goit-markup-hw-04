@@ -93,6 +93,7 @@ address {
 .contact-link:hover,
 .contact-link:focus {
     color: var(--main-btn-color);
+    fill: var(--main-btn-color);
 }
 .header {
     border-bottom: 1px solid var(--line-color);
@@ -119,7 +120,6 @@ address {
     padding-bottom: 94px;
 }
 .hero {
-    background-color: #2F303A;
     padding: 200px 0;
     text-align: center;
 }
@@ -155,6 +155,16 @@ address {
     background-color: var(--second-color);
     border-color: var(--main-btn-color);
 }
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* -----------FEATURES----------- */
 .visually-hidden {
@@ -170,6 +180,7 @@ address {
 
 .work-center {
     display: flex;
+    justify-content: space-between;
 }
 .work-center>li {
     width: 270px;
@@ -177,7 +188,23 @@ address {
 .work-center>li:not(:last-child) {
     margin-right: 30px;
 }
+.benefits .item {
+    width: calc((100% - 90px) / 4);
+    display: flex;
+    flex-direction: column;
+}
+.work-center .icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
 .work-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -185,6 +212,7 @@ address {
     margin-bottom: 10px;
 }
 .work-text {
+    margin: 0;
     font-size: 14px;
     line-height: 1.71;
     color: var(--third-color);
